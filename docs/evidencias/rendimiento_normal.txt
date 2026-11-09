@@ -1,0 +1,14 @@
+=== DFSha - PRUEBA DE RENDIMIENTO ===
+CONDICION: NORMAL
+ARCHIVO: 8 MiB
+REPETICIONES: 3
+
+REP 1: PUT=1.437s (5.57 MiB/s) | GET=0.496s (16.13 MiB/s) | SHA=OK
+REP 2: PUT=1.429s (5.60 MiB/s) | GET=0.499s (16.03 MiB/s) | SHA=OK
+REP 3: PUT=1.413s (5.66 MiB/s) | GET=0.488s (16.38 MiB/s) | SHA=OK
+
+=== RESUMEN ===
+PUT: latencia p50=1.429s | p95=1.436s | throughput p50=5.60 MiB/s | p95=5.65 MiB/s
+GET: latencia p50=0.496s | p95=0.499s | throughput p50=16.13 MiB/s | p95=16.35 MiB/s
+INTEGRIDAD: TRUE
+CSV: /home/ubuntu/dfsha/docs/evidencias/rendimiento_normal.csv

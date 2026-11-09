@@ -1,0 +1,28 @@
+=== DFSha - PRUEBA RF2 PUT/GET ===
+
+=== ARCHIVO ORIGINAL ===
+-rw-rw-r-- 1 ubuntu ubuntu 13M Nov  8 00:10 /tmp/dfsha_rf2_13MiB.bin
+
+=== SHA-256 ORIGINAL ===
+076b66ebd386bb875fe3d726dc871dc1b794f27ba10c4e6f24e2ecf47e0c661d  /tmp/dfsha_rf2_13MiB.bin
+
+=== PUT DISTRIBUIDO ===
+Bloque 0 (4194304 bytes) -> D1,D2
+Bloque 1 (4194304 bytes) -> D2,D3
+Bloque 2 (4194304 bytes) -> D3,D1
+Bloque 3 (1048576 bytes) -> D1,D2
+PUT OK: /archivo_rf2.bin | 4 bloques | R=2
+SHA-256: 076b66ebd386bb875fe3d726dc871dc1b794f27ba10c4e6f24e2ecf47e0c661d
+
+=== GET DISTRIBUIDO ===
+Bloque 0 <- D1
+Bloque 1 <- D2
+Bloque 2 <- D3
+Bloque 3 <- D1
+GET OK: /archivo_rf2.bin -> /tmp/dfsha_rf2_recuperado.bin | 4 bloques
+SHA-256: 076b66ebd386bb875fe3d726dc871dc1b794f27ba10c4e6f24e2ecf47e0c661d
+
+=== COMPARACIÓN FINAL ===
+076b66ebd386bb875fe3d726dc871dc1b794f27ba10c4e6f24e2ecf47e0c661d  /tmp/dfsha_rf2_13MiB.bin
+076b66ebd386bb875fe3d726dc871dc1b794f27ba10c4e6f24e2ecf47e0c661d  /tmp/dfsha_rf2_recuperado.bin
+ARCHIVO RECUPERADO IDÉNTICO: TRUE

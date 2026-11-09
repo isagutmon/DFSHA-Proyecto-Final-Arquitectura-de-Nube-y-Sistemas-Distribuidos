@@ -1,0 +1,24 @@
+Servidor: 172.31.25.229:50051
+
+1. PUT remoto
+success: true
+block_id: "remote-test-d2-001"
+sha256: "f59d216ca6db75448317203c23f8b73bd223fcac7b9cb024e0f7e69df700f1f6"
+size: 1048576
+message: "Bloque almacenado correctamente"
+
+
+2. STAT remoto
+success: true
+block_id: "remote-test-d2-001"
+sha256: "f59d216ca6db75448317203c23f8b73bd223fcac7b9cb024e0f7e69df700f1f6"
+size: 1048576
+message: "Bloque disponible"
+
+
+3. GET remoto
+
+SHA original   : f59d216ca6db75448317203c23f8b73bd223fcac7b9cb024e0f7e69df700f1f6
+SHA D2         : f59d216ca6db75448317203c23f8b73bd223fcac7b9cb024e0f7e69df700f1f6
+SHA recuperado : f59d216ca6db75448317203c23f8b73bd223fcac7b9cb024e0f7e69df700f1f6
+INTEGRIDAD REMOTA OK: True

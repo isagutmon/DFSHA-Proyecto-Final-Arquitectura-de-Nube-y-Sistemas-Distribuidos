@@ -1,0 +1,20 @@
+=== DFSha - PRUEBA DE 3 DATANODES ===
+
+D1 172.31.21.156:50051
+  PUT/GET       : OK
+  SHA-256       : OK
+  Tamaño        : 1048576 bytes
+
+D2 172.31.25.229:50051
+  PUT/GET       : OK
+  SHA-256       : OK
+  Tamaño        : 1048576 bytes
+
+D3 172.31.28.137:50051
+  PUT/GET       : OK
+  SHA-256       : OK
+  Tamaño        : 1048576 bytes
+
+-------------------------------------
+RESULTADO: 3/3 DATANODES OPERATIVOS
+INFRAESTRUCTURA DE DATOS: OK
