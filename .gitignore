@@ -1,0 +1,55 @@
+# Entorno virtual y Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secretos y configuración privada
+.dfsha_secrets
+.env
+.env.*
+*.secret
+session.json
+.dfsha/
+
+# Claves privadas y credenciales
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Datos persistentes de los DataNodes
+storage/
+*.part
+
+# Logs y procesos
+logs/
+*.log
+*.pid
+
+# Archivos temporales y paquetes de sincronización
+*.tar.gz
+*.tmp
+*.swp
+*~
+
+# Sistema operativo / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Certificados generados para el despliegue
+certs/
+
+# Datos internos de etcd
+deploy/etcd-data/
+
+# Copias de respaldo
+*.bak
+*.bak_*
+*.bak*
+
+# Datos binarios de demostración
+demo_data/*.bin

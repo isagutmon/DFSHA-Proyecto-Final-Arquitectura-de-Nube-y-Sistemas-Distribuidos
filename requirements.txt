@@ -1,0 +1,9 @@
+fastapi==0.162.2
+uvicorn==0.54.0
+grpcio==1.85.1
+protobuf==7.36.2
+httpx==0.28.1
+typer==0.28.0
+PyJWT==2.15.1
+argon2-cffi==25.1.0
+pydantic==2.14.3

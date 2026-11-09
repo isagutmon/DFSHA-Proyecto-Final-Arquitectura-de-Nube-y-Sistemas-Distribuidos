@@ -1,0 +1,30 @@
+// -----------------------------------------------------------------------------
+// Contrato gRPC del plano de datos DFSha: mensajes y servicio de DataNode.
+// Los comentarios son documentación; las definiciones protobuf no se modifican.
+// -----------------------------------------------------------------------------
+syntax = "proto3";
+
+package dfsha;
+
+service DataNode {
+  rpc PutBlock(stream BlockChunk) returns (BlockAck);
+  rpc GetBlock(BlockRequest) returns (stream BlockChunk);
+  rpc StatBlock(BlockRequest) returns (BlockAck);
+}
+
+message BlockChunk {
+  string block_id = 1;
+  bytes data = 2;
+}
+
+message BlockRequest {
+  string block_id = 1;
+}
+
+message BlockAck {
+  bool success = 1;
+  string block_id = 2;
+  string sha256 = 3;
+  uint64 size = 4;
+  string message = 5;
+}
